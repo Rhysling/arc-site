@@ -1,0 +1,25 @@
+// Set your brand colors
+$arc-blue: #326297;
+$arc-green: #96c348; //#a8cf36;
+$arc-dark-text: #444444;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $arc-dark-text;
+$grey-light: $beige-light;
+$primary: $arc-blue;
+
+$link: $arc-green;
+$link-visited: $arc-green;
+$link-hover: darken($arc-green, 15%);//#667919;
+
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
