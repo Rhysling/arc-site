@@ -1,12 +1,10 @@
 <script>
-  import Headroom from "svelte-headroom";
+  import Headroom from "./Headroom.svelte"; // Thanks to "svelte-headroom"
   import NavBar from './NavBar.svelte';
 
   import { isVideoDisplayed, toggleVideoDisplayed } from '../stores/general-store.js';
 
   export let slug = null;
-
-  let hi = function () { alert("Clicked!") };
 	
 </script>
 
@@ -31,7 +29,7 @@
     </div>
   {:else}
     <div class="head2">
-      <img src="/img/arc-head3.jpg" alt="" />
+      <img src="/img/arc-head4.jpg" alt="" />
     </div>  
   {/if}
 {/if}
@@ -97,7 +95,7 @@
   .head2 {
     margin: 60px 0 0;
     width: 100%;
-    background-image: url("/img/arc-head3-bg.jpg");
+    background-image: url("/img/arc-head4-bg.jpg");
 
     img {
       display: block;

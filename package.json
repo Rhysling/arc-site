@@ -22,7 +22,6 @@
     "svelte-preprocess": "^3.6.0"
   },
   "dependencies": {
-    "sirv-cli": "^0.4.4",
-    "svelte-headroom": "^2.2.1"
+    "sirv-cli": "^0.4.4"
   }
 }

@@ -27,7 +27,7 @@
               the opportunity to serve one of the most demanding customers in the world.  Best of all, you are funding your
               company by earning revenue, not just raising money from investors.
             </div>
-            <p><a on:click="{navTo}" data-dest="/working-capital">Unfortunately, winning the contract is not enough. &gt;&gt;</a></p>
+            <p style="margin: 1rem 0 0;"><a href="/" on:click="{navTo}" data-dest="/working-capital">Unfortunately, winning the contract is not enough. &gt;&gt;</a></p>
           </div>
         </div>
 

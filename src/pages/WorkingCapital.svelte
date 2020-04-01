@@ -35,7 +35,7 @@
             </ul>
 
             </div>
-            <p><a on:click="{navTo}" data-dest="/arc-solution">We understand and we can help you. Here's how. &gt;&gt;</a></p>
+            <p style="margin: 1rem 0 0;"><a href="/" on:click="{navTo}" data-dest="/arc-solution">We understand and we can help you. Here's how. &gt;&gt;</a></p>
           </div>
         </div>
 

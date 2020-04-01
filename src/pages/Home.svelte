@@ -19,7 +19,7 @@
             <img src="/img/sq-fed-research-projects2.png" alt="Capitol building" />
             <span class="arc-subhead">Federal research contracts</span><br>
             are an excellent way for entrepreneurial companies to develop exciting new technologies with outstanding commercial potential.
-            <p><a on:click="{navTo}" data-dest="/how-arc-works">More &gt;&gt;</a></p>
+            <p><a href="/" on:click="{navTo}" data-dest="/how-arc-works">More &gt;&gt;</a></p>
           </div>
         </div>
 
@@ -29,7 +29,7 @@
             <span class="arc-subhead">Finding working capital?</span><br>
             Winning the contract is not enough. Entrepreneurial companies need working capital – the money to get started and grow the business.
             <span style="font-style:italic;">Who can you turn to?</span>
-            <p><a on:click="{navTo}" data-dest="/working-capital" >More &gt;&gt;</a></p>
+            <p><a href="/" on:click="{navTo}" data-dest="/working-capital" >More &gt;&gt;</a></p>
           </div>
         </div>
 
@@ -38,7 +38,7 @@
             <img src="/img/sq-arc-can-help.png" alt="Bridge to success" />
             <span class="arc-subhead">We can help.</span><br>
             We created American Research Capital (ARC) to help fund companies performing Federally-sponsored research contracts.  We invite you to look to ARC.
-            <p><a on:click="{navTo}" data-dest="/arc-solution" >More &gt;&gt;</a></p>
+            <p><a href="/" on:click="{navTo}" data-dest="/arc-solution" >More &gt;&gt;</a></p>
           </div>
         </div>
 

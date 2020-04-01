@@ -1,5 +1,5 @@
 <script>
-  import { routes } from '../stores/route-store.js';
+  import { routes, navTo } from '../stores/route-store.js';
 
   export let isFooter = false;
 
@@ -12,13 +12,13 @@
 {#if isFooter}
   <div class="bottom-nav">
     {#each bottomRoutes as route, i}
-      <a href="{route.slug}">{route.title}</a>{#if i < iLast}&nbsp;&nbsp;|&nbsp;&nbsp;{/if}
+      <a href="/" on:click="{navTo}" data-dest="{route.slug}">{route.title}</a>{#if i < iLast}&nbsp;&nbsp;|&nbsp;&nbsp;{/if}
     {/each}
   </div>
 {:else}
   <nav class="container navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/">
+      <a href="/" class="navbar-item">
         <img src="/img/arc-logo-sm.png" width="113" height="30" alt="ARC">
       </a>
 
@@ -34,15 +34,15 @@
         {#each topRoutes as r}
           {#if r.children && r.children.length}
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">{r.title}</a>
+              <a href="/" on:click="{navTo}" data-dest="{r.slug}" class="navbar-link">{r.title}</a>
               <div class="navbar-dropdown">
                 {#each r.children as c}
-                  <a class="navbar-item" href="{c.slug}">{c.title}</a>
+                  <a href="/" on:click="{navTo}" data-dest="{c.slug}" class="navbar-item">{c.title}</a>
                  {/each}
               </div>
             </div>
           {:else}
-            <a class="navbar-item" href="{r.slug}">{r.title}</a>
+            <a href="/" on:click="{navTo}" data-dest="{r.slug}" class="navbar-item">{r.title}</a>
           {/if}
         {/each}
       </div>

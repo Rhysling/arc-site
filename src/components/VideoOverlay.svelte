@@ -6,7 +6,7 @@
 <div class="video-overlay" on:click="{toggleVideoDisplayed}" style="display:{$isVideoDisplayed ? "block" : "none"};">
   <i class="far fa-window-close fa-3x video-close"></i>
   <div class="video-box">
-    <iframe width="600" height="340" src="https://www.youtube.com/embed/vgpTJ-2pmto?controls=1"></iframe>
+    <iframe width="600" height="340" src="https://www.youtube.com/embed/vgpTJ-2pmto?controls=1" title="ARC Video"></iframe>
   </div>
 </div>
 
@@ -33,6 +33,10 @@
     right: 3rem;
     color: #ffffff;
     opacity: 0.8;
+
+    &:hover {
+      opacity: 1.0;
+    }
   }
 
   .video-box {
