@@ -23,6 +23,16 @@ a:hover {
   text-decoration: underline;
 }
 
+// Fix navbar dropdown not closing on click
+@media screen and (min-width: $desktop) {      // 1025px
+  .navbar-item.is-hoverable:hover .navbar-dropdown {
+    display: block !important;
+  }
+  .navbar-item.is-hoverable:focus-within .navbar-dropdown {
+    display: none;
+  }
+}
+
 // Custom Classes
 
 .arc-head {
@@ -30,8 +40,17 @@ a:hover {
   margin: 0;
   padding: 0 0 1rem 0;
   border: 0;
-  font-size: 36px;
+  color: $grey-darker;
+  font-size: 2rem; //36px;
   font-family: 'book antiqua', palatino, sans-serif;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: $tablet) {
+    font-size: 1.2rem;
+  }
 }
 
 .arc-subhead {

@@ -36,6 +36,7 @@
 
 <style type="text/scss">
   @import "../styles/_custom-variables.scss";
+  @import "../../node_modules/bulma/sass/utilities/_all.sass";
 
   .logo {
     margin: 60px 0 0;
@@ -44,7 +45,7 @@
     img {
       display: block;
       margin: 0 auto;
-      height: 150px;
+      max-height: 150px;
       width: auto;
     }
   }
@@ -90,6 +91,13 @@
       background-color:  rgba(255, 255, 255, 0.95);
       border-color: darken($arc-green, 20%);
     }
+
+     @media screen and (max-width: $tablet) {
+      font-size: 1.0rem;
+      width: 140px;
+      height: 50px;
+      padding: 12px 0 0;
+    }
   }
 
   .head2 {
@@ -108,11 +116,17 @@
 .subhead {
   width: 100%;
   font-family: 'Montserrat', serif;
-  font-size: 30px;
+  font-size: 2.5rem; //30px;
   text-align: center;
   color: white;
   background-color: #0174b7;
   padding: 4px;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 1.5rem;
+  }
 }
+
+
 
 </style>

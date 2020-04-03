@@ -1,4 +1,6 @@
 <script>
+	import { onMount } from 'svelte';
+
 	import GlobalCss from './components/GlobalCss.svelte';
 	import VideoOverlay from './components/VideoOverlay.svelte';
 	import Header from './components/Header.svelte';
@@ -6,10 +8,17 @@
 	import HowArcWorks from './pages/HowArcWorks.svelte';
 	import WorkingCapital from './pages/WorkingCapital.svelte';
 	import TheArcSolution from './pages/TheArcSolution.svelte';
+	import CaseStudies from './pages/CaseStudies.svelte';
 
 	import Footer from './components/Footer.svelte';
 
-	import { currentSlug } from './stores/route-store.js';
+	import { currentSlug, navFromUrl } from './stores/route-store.js';
+
+
+
+	onMount(() => {
+		navFromUrl();
+	});
 
 	if (!$currentSlug)
 		$currentSlug = "/";
@@ -34,6 +43,7 @@
 <HowArcWorks {slug} />
 <WorkingCapital {slug} />
 <TheArcSolution {slug} />
+<CaseStudies {slug} />
 
 <Footer />
 

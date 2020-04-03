@@ -5,13 +5,12 @@
 
 <div class="video-overlay" on:click="{toggleVideoDisplayed}" style="display:{$isVideoDisplayed ? "block" : "none"};">
   <i class="far fa-window-close fa-3x video-close"></i>
-  <div class="video-box">
-    <iframe width="600" height="340" src="https://www.youtube.com/embed/vgpTJ-2pmto?controls=1" title="ARC Video"></iframe>
-  </div>
+    <div id="video-box" class="video-box"><iframe src="https://www.youtube.com/embed/vgpTJ-2pmto?controls=1" title="ARC Video" frameborder="0" allowfullscreen></iframe></div>
 </div>
 
 <style type="text/scss">
   @import "../styles/_custom-variables.scss";
+  @import "../../node_modules/bulma/sass/utilities/_all.sass";
 
   .video-overlay {
     position: fixed;
@@ -24,7 +23,6 @@
     background-color: rgba(0,0,0,0.5);
     z-index: 100;
     cursor: pointer;
-
   }
 
   .video-close {
@@ -48,6 +46,28 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media screen and (max-width: $tablet) {
+      border: 7px solid $arc-green;
+      box-shadow: 7px;
+      width: 465px;
+      height: 270px;
+    }
+
+    @media screen and (max-width: 540px) {
+      border: 5px solid $arc-green;
+      box-shadow: 5px;
+      width: 310px;
+      height: 180px;
+    }
   }
 
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+ 
 </style>

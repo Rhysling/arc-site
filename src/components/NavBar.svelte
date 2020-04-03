@@ -7,6 +7,16 @@
   let bottomRoutes = [$routes, ...topRoutes];
   let iLast = bottomRoutes.length - 1;
 
+  let isActive = false;
+
+  let toggleActive = function (e) {
+    isActive = !isActive;
+  };
+
+  let setActiveFalse = function (e) {
+    isActive = false;
+  };
+
 </script>
 
 {#if isFooter}
@@ -18,18 +28,18 @@
 {:else}
   <nav class="container navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a href="/" class="navbar-item">
+      <a href="/" on:click="{navTo}" data-dest="/" class="navbar-item" on:click="{setActiveFalse}">
         <img src="/img/arc-logo-sm.png" width="113" height="30" alt="ARC">
       </a>
 
-      <button role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false">
+      <button role="button" class="navbar-burger burger" class:is-active={isActive} aria-label="menu" aria-expanded="false" on:click="{toggleActive}">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </button>
     </div>
 
-    <div class="navbar-menu">
+    <div class="navbar-menu" class:is-active={isActive} on:click="{setActiveFalse}">
       <div class="navbar-start">
         {#each topRoutes as r}
           {#if r.children && r.children.length}
