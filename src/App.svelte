@@ -8,13 +8,21 @@
 	import HowArcWorks from './pages/HowArcWorks.svelte';
 	import WorkingCapital from './pages/WorkingCapital.svelte';
 	import TheArcSolution from './pages/TheArcSolution.svelte';
+
 	import CaseStudies from './pages/CaseStudies.svelte';
+	import CaseHnuPhotonics from './pages/CaseHnuPhotonics.svelte';
+	import CaseHawaiiBiotech from './pages/CaseHawaiiBiotech.svelte';
+	import CaseIqAnalog from './pages/CaseIqAnalog.svelte';
+	import CaseBioMarkerStrategies from './pages/CaseBioMarkerStrategies.svelte';
+	import CaseNwBiotechCompany from './pages/CaseNwBiotechCompany.svelte';
+
+
+	import AboutUs from './pages/AboutUs.svelte';
+	import ContactUs from './pages/ContactUs.svelte';
 
 	import Footer from './components/Footer.svelte';
 
 	import { currentSlug, navFromUrl } from './stores/route-store.js';
-
-
 
 	onMount(() => {
 		navFromUrl();
@@ -39,11 +47,34 @@
 <GlobalCss />
 <VideoOverlay />
 <Header {slug} />
-<Home {slug} />
-<HowArcWorks {slug} />
-<WorkingCapital {slug} />
-<TheArcSolution {slug} />
-<CaseStudies {slug} />
+
+{#if slug === "/"}
+	<Home />
+{:else if slug === "/how-arc-works"}
+	<HowArcWorks />
+{:else if slug === "/working-capital"}
+	<WorkingCapital />
+{:else if slug === "/arc-solution"}
+	<TheArcSolution />
+{:else if slug === "/case-studies"}
+	<CaseStudies />
+{:else if slug === "/case/hnu-photonics"}
+	<CaseHnuPhotonics />
+{:else if slug === "/case/hawaii-bio"}
+	<CaseHawaiiBiotech />
+{:else if slug === "/case/iq-analog"}
+	<CaseIqAnalog />
+{:else if slug === "/case/biomarker-strategies"}
+	<CaseBioMarkerStrategies />
+{:else if slug === "/case/nw-biotech"}
+	<CaseNwBiotechCompany />
+{:else if slug === "/about-us"}
+	<AboutUs />
+{:else if slug === "/contact-us"}
+	<ContactUs />
+{:else}
+	<div> Where's my page?</div>
+{/if}
 
 <Footer />
 

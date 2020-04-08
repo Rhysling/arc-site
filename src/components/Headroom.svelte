@@ -1,9 +1,9 @@
 <script>
   import { createEventDispatcher } from "svelte";
 
-  let duration = "300ms";
-  let offset = 0;
-  let tolerance = 0;
+  export let duration = "300ms";
+  export let offset = 0;
+  export let tolerance = 0;
 
   let headerClass = "pin";
   let lastHeaderClass = "pin";

@@ -47,21 +47,22 @@ import NavBar from './NavBar.svelte';
 
   <section class="section arc-footer-bottom">
     <div class="container">
-      <div class="is-pulled-left">
+      <div class="left">
         &copy;2015-{yr} - American Research Capital, LLC
       </div>
-      <div class="is-pulled-right">
+      <div class="right">
         <NavBar isFooter="{true}" />
       </div>
     </div>
   </section>
 
 <style type="text/scss">
+  @import "../../node_modules/bulma/sass/utilities/_all.sass";
 
   .arc-footer {
     color: #dddddd;
     background-color: #222222;
-    padding: 1rem 0;
+    padding: 1rem;
     font-size: 13px;
 
     input {
@@ -72,8 +73,24 @@ import NavBar from './NavBar.svelte';
   .arc-footer-bottom {
     color: #eeeeee;
     background-color: #333333;
-    padding: 1rem 0 2rem;
+    padding: 1rem 1rem 2rem;
     font-size: 12px;
+
+    .left {
+      float: left;
+
+      @media screen and (max-width: $tablet) {
+        float: none;
+      }
+    }
+
+    .right {
+      float: right;
+
+      @media screen and (max-width: $tablet) {
+        float: none;
+      }
+    }
   }
 
   .arc-subhead {

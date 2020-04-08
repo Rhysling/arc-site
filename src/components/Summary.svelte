@@ -16,6 +16,10 @@
   .summary {
     text-align: center;
     margin: 2rem 0;
+
+     @media screen and (max-width: 450px) {
+      margin: 2rem 0 0;
+    }
   }
   .summary-img {
     text-align: center;
@@ -25,6 +29,10 @@
       display: inline-block;
       width: 186px;
       height: auto;
+    }
+
+    @media screen and (max-width: 450px) {
+      display: none;
     }
   }
 

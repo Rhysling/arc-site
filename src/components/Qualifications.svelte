@@ -32,13 +32,13 @@
     
     .q-head {
       font-family: 'book antiqua', palatino, sans-serif;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: bold;
     }
 
     .q-subhead {
       font-family: 'book antiqua', palatino, sans-serif;
-      //font-size: 1rem;
+      font-size: 1.1rem;
       font-weight: bold;
     }
 
@@ -54,6 +54,9 @@
 
       li {
         margin: 0 0 0 10px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: italic;
+        font-size: 1.1rem;
       }
     }
   }

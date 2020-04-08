@@ -45,6 +45,7 @@
     img {
       display: block;
       margin: 0 auto;
+      padding: 0 0.5rem;
       max-height: 150px;
       width: auto;
     }

@@ -26,18 +26,28 @@ const r = {
       slug: "/case-studies",
       children: [
         {
-          title: "Case-H Nu Photonics",
+          title: "Case - H Nu Photonics",
           slug: "/case/hnu-photonics",
           children: []
         },
         {
-          title: "Case-Hawaii Biotech",
+          title: "Case - Hawaii Biotech",
           slug: "/case/hawaii-bio",
           children: []
         },
         {
-          title: "Case-IQ-Analog Corporation",
+          title: "Case - IQ-Analog Corporation",
           slug: "/case/iq-analog",
+          children: []
+        },
+        {
+          title: "Case - BioMarker Strategies",
+          slug: "/case/biomarker-strategies",
+          children: []
+        },
+        {
+          title: "Case - A Northwest Biotech Company",
+          slug: "/case/nw-biotech",
           children: []
         }
       ]
@@ -55,18 +65,28 @@ const r = {
   ]
 };
 
-function findRoute (routes, slug) {
-  if (routes.slug === slug) return routes;
-	
-	if (routes.children.length) {
-    for (let i = 0; i < routes.children.length; i +=1) {
-			 var a = findRoute (routes.children[i], slug);
-			if (a) return a;
-		}
+function findRoute (routeRoot, slug) {
+  let cr = null,
+      isFound = false;
+
+  function traverse (node) {
+    if (isFound || !node) return;
+
+    if (node.slug === slug) {
+      cr = node;
+      isFound = true;
+    }
+
+    if (node.children && node.children.length) {
+      for (let i = 0; i < node.children.length; i += 1) {
+        traverse(node.children[i]);
+      }
+    }
   }
-	else {
-		return null;
-	}
+
+  traverse (routeRoot);
+
+  return cr;
 };
 
 
@@ -83,7 +103,7 @@ export const currentSlug = writable("");
 
 export const currentRoute = derived(
 	[routes, currentSlug],
-	($routes, $currentSlug) => findRoute($routes, $currentSlug)
+	([$routes, $currentSlug]) => findRoute($routes, $currentSlug)
 );
 
 
@@ -95,6 +115,7 @@ export const navFromUrl = function () {
 
   if (r) {
     currentSlug.set(pathName);
+    document.title = "ARC - " + r.title;
   }
   else {
     window.location.replace(window.location.origin);
@@ -105,9 +126,13 @@ export const navTo = function (e) {
   e.preventDefault();
 
   let pathName = e.currentTarget.dataset.dest;
-  // debugger;
   window.history.pushState({}, pathName, window.location.origin + pathName);
   currentSlug.set(pathName);
+
+  let r = findRoute(get(routes), pathName);
+
+  if (r)
+    document.title = "ARC - " + r.title;
 };
 
 

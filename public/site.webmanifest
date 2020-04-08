@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "American Research Capital",
+    "short_name": "ARC",
+    "description": "Financing for companies performing Federally-sponsored research",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,6 +14,8 @@
             "type": "image/png"
         }
     ],
+    "start_url": "/",
+    "scope": "/",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone"
