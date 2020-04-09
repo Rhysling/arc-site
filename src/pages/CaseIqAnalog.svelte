@@ -12,13 +12,13 @@
       {$currentRoute.title}
     </div>
 
-    <div class="box main-content">
+    <div class="box main-content is-clearfix">
       <a href="https://www.iqanalog.com/" target="_blank"><img src="/img/cases/logo-iq-analog.jpg" alt="" class="logo" /></a>
 
-<img src="/img/cases/hbi-1.jpg" alt="" class="img-r" />
+<img src="/img/cases/xxx-1.jpg" alt="" class="img-r" />
 <p>Todo.</p>
 
-<img src="/img/cases/hbi-2.jpg" alt="" class="img-l" />
+<img src="/img/cases/xxx-2.jpg" alt="" class="img-l" />
 <p>Todo.</p>
 
 

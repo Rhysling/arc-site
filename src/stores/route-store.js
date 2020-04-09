@@ -46,8 +46,8 @@ const r = {
           children: []
         },
         {
-          title: "Case - A Northwest Biotech Company",
-          slug: "/case/nw-biotech",
+          title: "Case - Kineta, Inc.",
+          slug: "/case/kineta",
           children: []
         }
       ]
@@ -80,6 +80,7 @@ function findRoute (routeRoot, slug) {
     if (node.children && node.children.length) {
       for (let i = 0; i < node.children.length; i += 1) {
         traverse(node.children[i]);
+        if (isFound) break;
       }
     }
   }

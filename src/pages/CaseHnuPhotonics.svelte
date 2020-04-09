@@ -12,7 +12,7 @@
       {$currentRoute.title}
     </div>
 
-    <div class="box main-content">
+    <div class="box main-content is-clearfix">
       <a href="http://www.hnuphotonics.com/" target="_blank"><img src="/img/cases/logo-hnu-photonics.jpg" alt="" class="logo" /></a>
 
 <img src="/img/cases/hnu-1.jpg" alt="" class="img-r" />
@@ -39,10 +39,12 @@ the medical imaging breakthrough, CellTray.  The CellTray technology was initial
 
 <div class="arc-subhead">Financial Plan</div>
 
+<img src="/img/cases/hnu-5.jpg" alt="" class="img-r" />
 <p>HNu Photonics was created and has been able to grow to date entirely without raising outside equity capital.  Leveraging the technical expertise
 and proven record of success of its founders, HNu was able to win key contracts at inception.  By performing on those contracts and exercising
 careful financial management, HNu built its capital base the old fashioned way – by earning it.</p>
 
+<img src="/img/cases/hnu-6.jpg" alt="" class="img-l" />
 <p>HNu's technologies address the needs of customers across scientific, military and commercial sectors, so HNu operates under a diversified portfolio
 of contracts yielding predictable future revenue.  American Research Capital (ARC) is able to look to this flow of income along with HNu’s record
 of success to finance the capital investment required for projects and opportunities that are not immediately self-funding.  ARC gives HNu

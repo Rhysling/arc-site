@@ -14,7 +14,7 @@
 	import CaseHawaiiBiotech from './pages/CaseHawaiiBiotech.svelte';
 	import CaseIqAnalog from './pages/CaseIqAnalog.svelte';
 	import CaseBioMarkerStrategies from './pages/CaseBioMarkerStrategies.svelte';
-	import CaseNwBiotechCompany from './pages/CaseNwBiotechCompany.svelte';
+	import CaseKineta from './pages/CaseKineta.svelte';
 
 
 	import AboutUs from './pages/AboutUs.svelte';
@@ -66,8 +66,8 @@
 	<CaseIqAnalog />
 {:else if slug === "/case/biomarker-strategies"}
 	<CaseBioMarkerStrategies />
-{:else if slug === "/case/nw-biotech"}
-	<CaseNwBiotechCompany />
+{:else if slug === "/case/kineta"}
+	<CaseKineta />
 {:else if slug === "/about-us"}
 	<AboutUs />
 {:else if slug === "/contact-us"}
