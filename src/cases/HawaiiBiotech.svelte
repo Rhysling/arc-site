@@ -1,20 +1,3 @@
-<script>
-  import Summary from '../components/Summary.svelte';
-  import { currentRoute } from '../stores/route-store.js';
-
-  //console.log($currentRoute);
-
-</script>
-
-<section class="section" style="padding-top:1rem;">
-  <div class="container">
-    <div class="arc-head">
-      {$currentRoute.title}
-    </div>
-
-    <div class="box main-content is-clearfix">
-      <a href="http://www.hibiotech.com/" target="_blank"><img src="/img/cases/logo-hawaii-bio.jpg" alt="" class="logo" /></a>
-
 <img src="/img/cases/hbi-1.jpg" alt="" class="img-r" />
 <p>Hawaii Biotech (HBI) is the oldest and largest biotech company in Hawaii, founded in 1982 by four University of Hawaii professors.</p>
 
@@ -33,42 +16,41 @@ the stable, predictable cash flow of its large grand and contract portfolio to f
 <p>Since then, HBI has used its credit line with ARC to buffer the chunky and intermittent disbursements associated
 with large grants and contracts simplifying HBI's cash management needs.</p>
 
-    </div>
-
-    
-  </div>
-
-  <Summary />
-</section>
-
 <style type="text/scss">
-  .main-content {
-    margin: 0 auto;
-    max-width: 600px;
-    
-    .arc-subhead {
-      margin: 1.5rem 0 0.5rem;
-    }
+  
+  .arc-subhead {
+    margin: 1.0rem 0 0.5rem;
+  }
 
-    p {
-          margin: 0 0 1rem;
-    }
+  p {
+    margin: 0 0 1rem;
+  }
 
-    .logo {
-      display: block;
-      margin-bottom: 1rem;
-    }
+  .img-l {
+    display: block;
+    float: left;
+    margin: 0 0.5rem 0.5rem 0;
 
-    .img-l {
-      display: block;
-      float: left;
-      margin: 0 0.5rem 0.5rem 0;
-    }
-
-    .img-r {
-      display: block;
-      float: right;
-      margin: 0 0 0.5rem 0.5rem;
+    @media screen and (max-width: 520px) {
+      float: none;
+      margin: 0 auto 0.5rem;
     }
   }
+
+  .img-r {
+    display: block;
+    float: right;
+    margin: 0 0 0.5rem 0.5rem;
+
+    @media screen and (max-width: 520px) {
+      float: none;
+      margin: 0 auto 0.5rem;
+    }
+  }
+
+  .img-c {
+    display: block;
+    margin: 0 auto 0.5rem;
+  }
+
 </style>

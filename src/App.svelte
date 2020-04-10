@@ -10,12 +10,7 @@
 	import TheArcSolution from './pages/TheArcSolution.svelte';
 
 	import CaseStudies from './pages/CaseStudies.svelte';
-	import CaseHnuPhotonics from './pages/CaseHnuPhotonics.svelte';
-	import CaseHawaiiBiotech from './pages/CaseHawaiiBiotech.svelte';
-	import CaseIqAnalog from './pages/CaseIqAnalog.svelte';
-	import CaseBioMarkerStrategies from './pages/CaseBioMarkerStrategies.svelte';
-	import CaseKineta from './pages/CaseKineta.svelte';
-
+	import CaseBase from './pages/CaseBase.svelte';
 
 	import AboutUs from './pages/AboutUs.svelte';
 	import ContactUs from './pages/ContactUs.svelte';
@@ -58,16 +53,8 @@
 	<TheArcSolution />
 {:else if slug === "/case-studies"}
 	<CaseStudies />
-{:else if slug === "/case/hnu-photonics"}
-	<CaseHnuPhotonics />
-{:else if slug === "/case/hawaii-bio"}
-	<CaseHawaiiBiotech />
-{:else if slug === "/case/iq-analog"}
-	<CaseIqAnalog />
-{:else if slug === "/case/biomarker-strategies"}
-	<CaseBioMarkerStrategies />
-{:else if slug === "/case/kineta"}
-	<CaseKineta />
+{:else if slug.startsWith("/case/")}
+	<CaseBase />
 {:else if slug === "/about-us"}
 	<AboutUs />
 {:else if slug === "/contact-us"}

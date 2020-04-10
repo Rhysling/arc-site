@@ -34,7 +34,8 @@
         <div class="tile is-child box">
           <a href="/" on:click="{navTo}" data-dest="/case/iq-analog" ><img src="/img/cases/logo-iq-analog.jpg" alt="" /></a>
           <div class="arc-subhead">IQ-Analog Corporation</div>
-          We created American Research Capital (ARC) to help fund companies performing Federally-sponsored research contracts.  We invite you to look to ARC.
+          IQ-Analog Corporation is a U.S. domestic fabless semiconductor company focused on delivering antenna processor integrated circuits with unmatched
+          performance in high speed analog / digital data conversion.
           <p><a href="/" on:click="{navTo}" data-dest="/case/iq-analog" >More &gt;&gt;</a></p>
         </div>
       </div>
@@ -45,7 +46,8 @@
         <div class="tile is-child box">
           <a href="/" on:click="{navTo}" data-dest="/case/biomarker-strategies"><img src="/img/cases/logo-bms.jpg" alt="" /></a>
           <div class="arc-subhead">Biomarker Strategies</div>
-          We created American Research Capital (ARC) to help fund companies performing Federally-sponsored research contracts.  We invite you to look to ARC.
+          BioMarker Strategies has developed the proprietary and recently patented SnapPath&reg; Cancer Diagnostics System for predictive tests to guide
+          targeted drug development and treatment selection for patients with solid tumor malignancies.
           <p><a href="/" on:click="{navTo}" data-dest="/case/biomarker-strategies">More &gt;&gt;</a></p>
         </div>
       </div>

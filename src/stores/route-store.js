@@ -28,26 +28,36 @@ const r = {
         {
           title: "Case - H Nu Photonics",
           slug: "/case/hnu-photonics",
+          logoPath: "/img/cases/logo-hnu-photonics.jpg",
+          siteUrl: "http://www.hnuphotonics.com/",
           children: []
         },
         {
           title: "Case - Hawaii Biotech",
           slug: "/case/hawaii-bio",
+          logoPath: "/img/cases/logo-hawaii-bio.jpg",
+          siteUrl: "http://www.hibiotech.com/",
           children: []
         },
         {
           title: "Case - IQ-Analog Corporation",
           slug: "/case/iq-analog",
+          logoPath: "/img/cases/logo-iq-analog.jpg",
+          siteUrl: "https://www.iqanalog.com/",
           children: []
         },
         {
           title: "Case - BioMarker Strategies",
           slug: "/case/biomarker-strategies",
+          logoPath: "/img/cases/logo-bms.jpg",
+          siteUrl: "http://www.biomarkerstrategies.com/",
           children: []
         },
         {
           title: "Case - Kineta, Inc.",
           slug: "/case/kineta",
+          logoPath: "/img/cases/logo-kineta.jpg",
+          siteUrl: "https://kinetabio.com/",
           children: []
         }
       ]
