@@ -56,7 +56,7 @@ could bring in the equity at a higher, less dilutive valuation.</p>
 
   .img-c {
     display: block;
-    margin: 0 auto 0.5rem;
+    margin: 0 auto 1.0rem;
   }
 
 </style>

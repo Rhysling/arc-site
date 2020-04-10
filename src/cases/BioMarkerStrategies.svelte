@@ -49,7 +49,7 @@ combinations of immunotherapies with targeted therapies.</p>
 
   .img-c {
     display: block;
-    margin: 0 auto 0.5rem;
+    margin: 0 auto 1.0rem;
   }
 
 </style>

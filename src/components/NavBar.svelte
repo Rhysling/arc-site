@@ -17,6 +17,15 @@
     isActive = false;
   };
 
+  let gotoSearch = function (el) {
+    let sbs = document.querySelectorAll(".gsc-control-cse input");
+
+    if (!sbs || sbs.length == 0) return;
+
+    sbs[0].scrollIntoView();
+    sbs[0].focus();
+  };
+
 </script>
 
 {#if isFooter}
@@ -59,7 +68,7 @@
 
       <div class="navbar-end">
         <div class="navbar-item">
-          <button class="button is-primary" title="Search"><i class="fas fa-search"></i></button>
+          <button class="button is-primary" title="Search" on:click="{gotoSearch}"><i class="fas fa-search"></i></button>
         </div>
       </div>
     </div>

@@ -69,7 +69,7 @@ not their &quot;exit strategy.&quot;</p>
 
   .img-c {
     display: block;
-    margin: 0 auto 0.5rem;
+    margin: 0 auto 1.0rem;
   }
 
 </style>

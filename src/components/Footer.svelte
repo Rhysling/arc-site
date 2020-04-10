@@ -14,8 +14,11 @@ import NavBar from './NavBar.svelte';
             <div class="arc-subhead">SEARCH SITE</div>
             <div class="field">
               <div class="control">
+                <div class="gcse-search"></div>
+                <!--
                 <input class="input is-small" type="text" placeholder="Search">
                 <button class="button is-small"><i class="fas fa-search"></i></button>
+                -->
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@ DAC (digital to analog conversion) technology reduces chip area and power consum
 commercial components provided by vendors such as Xilinx, Intel, Analog Devices, Texas Instruments, and Broadcom.</p>
 
 <p>Formed in 2004 by a former engineering director at Broadcom, IQ-Analog is comprised of industry veterans with heritage from major U.S. chip suppliers.
-The company is 80% employee owned and offers a 100% U.S. based design team with no international dependencies and full secret clearance access.
+The company is 80% employee owned and offers a 100% U.S. based design team with no international dependencies and top secret clearance access.
 Customers include DARPA, Lockheed Martin, NXP, Broadcom, and others.</p>
 
 <img src="/img/cases/iqa-1.jpg" alt="" class="img-c" />
@@ -15,10 +15,11 @@ including 22 issued US patents protecting its unique product technology.</p>
 
 <img src="/img/cases/iqa-2.jpg" alt="" class="img-c" />
 
-<p>IQ-Analog is the industry leader in the military market for digital antenna processors and is poised to apply its revolutionary, patent-protected
-technology to 5G wireless infrastructure.  IQ-Analog has developed an equivalent ADC array using TPWQ that operate with 8X faster cores and
-offer 4X lower power with 14X smaller die area. Since the build cost of semiconductors is proportional to die area, this area savings converts
-directly to an overall 93% cost savings.</p>
+<p>IQ-Analog is the sole source of digital antenna processors for the defense / aerospace market servicing next generation radar, communications,
+and electronic warfare. The company has applied its revolutionary, patent-protected technology to the first wave of 5G wireless infrastructure
+and is partnering with industry leaders to deliver the next wave of processors with embedded data conversion.  IQ-Analog data conversion systems
+leverage TPWQ that operate with 8X faster cores and offer 4X lower power with 14X smaller die area. Since the build cost of semiconductors is
+proportional to die area, this area savings converts directly to an overall 93% cost savings.</p>
 
 <img src="/img/cases/iqa-3.jpg" alt="" class="img-l" />
 <img src="/img/cases/iqa-4.jpg" alt="" class="img-l" />
@@ -57,7 +58,7 @@ directly to an overall 93% cost savings.</p>
 
   .img-c {
     display: block;
-    margin: 0 auto 0.5rem;
+    margin: 0 auto 1.0rem;
   }
 
 </style>
