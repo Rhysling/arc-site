@@ -1,7 +1,10 @@
 
-<p>IQ-Analog is a fabless ASIC (application-specific integrated circuit) company whose proprietary ADC (analog to digital conversion) and
-DAC (digital to analog conversion) technology reduces chip area and power consumption by a factor of four or more relative to state-of-the-art
-commercial components provided by vendors such as Xilinx, Intel, Analog Devices, Texas Instruments, and Broadcom.</p>
+<p>IQ-Analog Corporation is a leading developer of wideband transceiver products servicing defense markets for advanced wireless communications
+and radar systems, and commercial markets with 5G semiconductor mixed-signal ASIC antenna processor technology.  With over a decade of
+research and development, our novel approach to high speed data conversion, using temporal-domain signal processing, is at the core of a
+new class of integrated circuits performing digital antenna processing with unprecedented performance and power efficiency.
+The patented technology reduces chip area and power consumption by a factor of four or more relative to state-of-the-art commercial
+components provided by vendors such as Xilinx, Intel, Analog Devices, Texas Instruments, and Broadcom.</p>
 
 <p>Formed in 2004 by a former engineering director at Broadcom, IQ-Analog is comprised of industry veterans with heritage from major U.S. chip suppliers.
 The company is 80% employee owned and offers a 100% U.S. based design team with no international dependencies and top secret clearance access.

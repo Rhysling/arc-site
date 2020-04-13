@@ -69,32 +69,59 @@
       return;
     }
 
-    // Send it
+    // Test CAPTCHA ********
 
-    fetch("/api/sendcontact?k=812g", {
-      method: 'POST',
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(msg),
-    })
-    //.then((response) => response.json())
-    .then((response) => {
-      if (response.ok) {
-        console.log("Success:", response);
-        validationSummaryMessage = "";
-        isDone = true;
-      }
-      else {
-        console.log("Failure:", response);
-        validationSummaryMessage = "Something went wrong.  Please call or email us directly.";
-        isDone = false;
-      }
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-      validationSummaryMessage = "Something went wrong.  Please call or email us directly.";
-      isDone = false;
+    grecaptcha.execute("6Lewq88UAAAAAJu_YijXIiu5PTpnvwdMekC15j04", {action: "contactus"})
+    .then(function(token) {
+      
+      // Validate it ********
+
+      fetch("/api/recaptcha", {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({token: token}),
+      })
+      .then(r =>  r.json().then(function (data) {
+        console.log(data);
+
+        if (data && data.success && data.score && (+data.score > 0.6)) {
+
+          // Send it ********
+
+          fetch("/api/sendcontact?k=812g", {
+            method: 'POST',
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(msg),
+          })
+          .then((response) => {
+            if (response.ok) {
+              //console.log("Success:", response);
+              validationSummaryMessage = "";
+              isDone = true;
+            }
+            else {
+              console.log("Failure:", response);
+              validationSummaryMessage = "Something went wrong.  Please call or email us directly.";
+              isDone = false;
+            }
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+            validationSummaryMessage = "Something went wrong.  Please call or email us directly.";
+            isDone = false;
+          });
+
+        }
+        else {
+          validationSummaryMessage = "The system thinks you are a robot.  Please call or email us directly.";
+          isDone = false;
+        }
+      }));
+
     });
 
   };
