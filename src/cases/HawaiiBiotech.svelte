@@ -11,7 +11,7 @@ Ebola and other hemorrhagic fever viruses, and malaria.</p>
 <img src="/img/cases/hbi-2.jpg" alt="" class="img-l" />
 <p>In late 2016, HBI had the opportunity to secure a new primary lab facility.  Financing for the construction was not readily available,
 and the company did not want to incur the dilution from taking in additional equity investment.  ARC allowed HBI to capitalize
-the stable, predictable cash flow of its large grand and contract portfolio to fund prompt completion of its new lab and office space.</p>
+the stable, predictable cash flow of its large grant and contract portfolio to fund prompt completion of its new lab and office space.</p>
 
 <p>Since then, HBI has used its credit line with ARC to buffer the chunky and intermittent disbursements associated
 with large grants and contracts simplifying HBI's cash management needs.</p>
