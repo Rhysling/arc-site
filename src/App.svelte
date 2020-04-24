@@ -19,7 +19,24 @@
 
 	import { currentSlug, navFromUrl } from './stores/route-store.js';
 
+
+
 	onMount(() => {
+		// googleCustomSearchScript = script: async src="https://cse.google.com/cse.js?cx=004504681668706684589:u7a9m6fztsv"
+		// googleCaptchaScript = " script: src="https://www.google.com/recaptcha/api.js?render=6Lewq88UAAAAAJu_YijXIiu5PTpnvwdMekC15j04"
+
+		let head = document.getElementsByTagName("head")[0];
+
+		let googleCustomSearchScript = document.createElement('script');
+		googleCustomSearchScript.setAttribute("type","text/javascript");
+		googleCustomSearchScript.setAttribute("src", "https://cse.google.com/cse.js?cx=004504681668706684589:u7a9m6fztsv");
+		head.appendChild(googleCustomSearchScript);
+
+		let googleCaptchaScript = document.createElement('script');
+		googleCaptchaScript.setAttribute("type","text/javascript");
+		googleCaptchaScript.setAttribute("src", "https://www.google.com/recaptcha/api.js?render=6Lewq88UAAAAAJu_YijXIiu5PTpnvwdMekC15j04");
+		head.appendChild(googleCaptchaScript);
+
 		navFromUrl();
 	});
 
