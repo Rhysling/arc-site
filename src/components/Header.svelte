@@ -1,38 +1,14 @@
 <script>
   import Headroom from "./Headroom.svelte"; // Thanks to "svelte-headroom"
-  import NavBar from './NavBar.svelte';
+  import NavBar from "./NavBar.svelte";
 
-  import { isVideoDisplayed, toggleVideoDisplayed } from '../stores/general-store.js';
+  import {
+    isVideoDisplayed,
+    toggleVideoDisplayed
+  } from "../stores/general-store.js";
 
   export let slug = null;
-	
 </script>
-
-{#if slug}
-  <Headroom offset="{50}">
-    <div class="arc-nav">
-      <NavBar isFooter="{false}" />
-    </div>
-  </Headroom>
-  {#if slug === "/"}
-    <div class="logo">
-      <img src="/img/arc-logo4.png" alt="American Research Capital" />
-    </div>
-    <div class="head">
-      <img src="/img/arc-head.jpg" alt="" />
-      <div class="play-button" on:click="{toggleVideoDisplayed}" style="display:{$isVideoDisplayed ? "none" : "block"};">
-        <i class="fas fa-play"></i> Play Video
-      </div>
-    </div>
-    <div class="subhead">
-      Financing Designed for Research
-    </div>
-  {:else}
-    <div class="head2">
-      <img src="/img/arc-head4.jpg" alt="" />
-    </div>  
-  {/if}
-{/if}
 
 <style type="text/scss">
   @import "../styles/_custom-variables.scss";
@@ -74,7 +50,7 @@
   .play-button {
     position: absolute;
     color: darken($arc-green, 20%);
-    background-color:  rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 1rem;
     text-align: center;
     font-size: 1.2rem;
@@ -89,12 +65,12 @@
     cursor: pointer;
 
     &:hover {
-      background-color:  rgba(255, 255, 255, 0.95);
+      background-color: rgba(255, 255, 255, 0.95);
       border-color: darken($arc-green, 20%);
     }
 
-     @media screen and (max-width: $tablet) {
-      font-size: 1.0rem;
+    @media screen and (max-width: $tablet) {
+      font-size: 1rem;
       width: 140px;
       height: 50px;
       padding: 12px 0 0;
@@ -114,20 +90,45 @@
     }
   }
 
-.subhead {
-  width: 100%;
-  font-family: 'Montserrat', serif;
-  font-size: 2.5rem; //30px;
-  text-align: center;
-  color: white;
-  background-color: #0174b7;
-  padding: 4px;
+  .subhead {
+    width: 100%;
+    font-family: "Montserrat", serif;
+    font-size: 2.5rem; //30px;
+    text-align: center;
+    color: white;
+    background-color: #0174b7;
+    padding: 4px;
 
-  @media screen and (max-width: $desktop) {
-    font-size: 1.5rem;
+    @media screen and (max-width: $desktop) {
+      font-size: 1.5rem;
+    }
   }
-}
-
-
-
 </style>
+
+{#if slug}
+  <Headroom offset={50}>
+    <div class="arc-nav">
+      <NavBar isFooter={false} />
+    </div>
+  </Headroom>
+  {#if slug === '/'}
+    <div class="logo">
+      <img src="/img/arc-logo4.png" alt="American Research Capital" />
+    </div>
+    <div class="head">
+      <img src="/img/arc-head.jpg" alt="" />
+      <div
+        class="play-button"
+        on:click={toggleVideoDisplayed}
+        style="display:{$isVideoDisplayed ? 'none' : 'block'};">
+        <i class="fas fa-play" />
+        Play Video
+      </div>
+    </div>
+    <div class="subhead">Financing Designed for Research</div>
+  {:else}
+    <div class="head2">
+      <img src="/img/arc-head4.jpg" alt="" />
+    </div>
+  {/if}
+{/if}

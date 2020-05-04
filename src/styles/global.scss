@@ -6,8 +6,6 @@
 
 @import "_custom-variables.scss";
 
-
-
 // Import only what you need from Bulma
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 @import "../../node_modules/bulma/sass/base/_all.sass";
@@ -20,46 +18,53 @@
 
 // Overrides
 a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 // Fix navbar dropdown not closing on click
-@media screen and (min-width: $desktop) {      // 1025px
-  .navbar-item.is-hoverable:hover .navbar-dropdown {
-    display: block !important;
-  }
-  .navbar-item.is-hoverable:focus-within .navbar-dropdown {
-    display: none;
-  }
+@media screen and (min-width: $desktop) {
+	// 1025px
+	.navbar-item.is-hoverable:hover .navbar-dropdown {
+		display: block !important;
+	}
+	.navbar-item.is-hoverable:focus-within .navbar-dropdown {
+		display: none;
+	}
 }
 
 // Custom Classes
 
 .arc-head {
-  text-align: center;
-  margin: 0;
-  padding: 0 0 1rem 0;
-  border: 0;
-  color: $grey-darker;
-  font-size: 2.5rem; //36px;
-  font-family: 'book antiqua', palatino, sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 0 0 1rem 0;
+	border: 0;
+	color: $grey-darker;
+	font-size: 2.5rem; //36px;
+	font-family: "book antiqua", palatino, sans-serif;
 
-  @media screen and (max-width: $desktop) {
-    font-size: 2.0rem;
-  }
+	@media screen and (max-width: $desktop) {
+		font-size: 2rem;
+	}
 
-  @media screen and (max-width: $tablet) {
-    font-size: 1.5rem;
-  }
+	@media screen and (max-width: $tablet) {
+		font-size: 1.5rem;
+	}
 }
 
 .arc-subhead {
-  font-weight: bold;
-  color: $primary;
+	font-weight: bold;
+	color: $primary;
 }
 
 .arc-subtitle {
-  font-style: italic;
-  font-weight: bold;
-  color: $primary;
+	font-style: italic;
+	font-weight: bold;
+	color: $primary;
+}
+
+// Google search
+
+.gsc-control-cse {
+	max-width: 300px;
 }

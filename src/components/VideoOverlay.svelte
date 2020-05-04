@@ -1,12 +1,9 @@
 <script>
-  import { isVideoDisplayed, toggleVideoDisplayed } from '../stores/general-store.js';
-
+  import {
+    isVideoDisplayed,
+    toggleVideoDisplayed
+  } from "../stores/general-store.js";
 </script>
-
-<div class="video-overlay" on:click="{toggleVideoDisplayed}" style="display:{$isVideoDisplayed ? "block" : "none"};">
-  <i class="far fa-window-close fa-3x video-close"></i>
-    <div id="video-box" class="video-box"><iframe src="https://www.youtube.com/embed/vgpTJ-2pmto?controls=1" title="ARC Video" frameborder="0" allowfullscreen></iframe></div>
-</div>
 
 <style type="text/scss">
   @import "../styles/_custom-variables.scss";
@@ -20,7 +17,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
     cursor: pointer;
   }
@@ -33,7 +30,7 @@
     opacity: 0.8;
 
     &:hover {
-      opacity: 1.0;
+      opacity: 1;
     }
   }
 
@@ -69,5 +66,18 @@
     width: 100%;
     height: 100%;
   }
- 
 </style>
+
+<div
+  class="video-overlay"
+  on:click={toggleVideoDisplayed}
+  style="display:{$isVideoDisplayed ? 'block' : 'none'};">
+  <i class="far fa-window-close fa-3x video-close" />
+  <div id="video-box" class="video-box">
+    <iframe
+      src="https://www.youtube.com/embed/vgpTJ-2pmto?controls=1"
+      title="ARC Video"
+      frameborder="0"
+      allowfullscreen />
+  </div>
+</div>
