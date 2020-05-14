@@ -29,10 +29,14 @@
     }
   }
 
-  // .img-c {
-  //   display: block;
-  //   margin: 0 auto 1rem;
-  // }
+  .img-c {
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  figcaption {
+    font-size: 0.8rem;
+  }
 </style>
 
 <img src="/img/cases/hnu-1.jpg" alt="" class="img-r" />
@@ -60,7 +64,7 @@
 <p>
   HNu Photonics is organized as a vertically-integrated research, design,
   fabrication, testing and marketing operation which enables HNu to nurture
-  technological innovations from concept to final product. HNu’s expertise and
+  technological innovations from concept to final product. HNu's expertise and
   capabilities with broad applications across various domains of investigation,
   design and fabrication are the keys to its successes.
 </p>
@@ -75,6 +79,47 @@
   NSF SBIR grant and became the basis for Nanopoint.
 </p>
 
+<div class="arc-subhead">Bridge Ventilators</div>
+
+<p>
+  In response to the COVID-19 outbreak, HNu Photonics applied their technical
+  and manufacturing expertise to build emergency bridge ventilators for
+  hospitals in Hawaii and around the world. Within 45 days the company began
+  delivering ventilators and is prepared to ramp production to 1,000 units per
+  week as needed to meet demand.
+</p>
+
+<figure class="img-c">
+  <img src="/img/cases/hnu-7.jpg" alt="" />
+  <figcaption>
+    Dr. Dan O’Connell of HNu Photonics talks with Mayor Michael Victorino about
+    the bridge ventilators his company has produced to assist Maui County's
+    emergency healthcare capacity.
+    <br />
+    PC: County of Maui / Brian Perry
+  </figcaption>
+</figure>
+
+<p>
+  <a
+    href="https://www.hawaiinewsnow.com/2020/05/12/maui-company-manufacturing-ventilators-now-getting-orders-around-world/"
+    target="_blank">
+    Hawaii News Now (5/11/2020)
+  </a>
+  <br />
+  <a
+    href="https://www.mauinews.com/news/local-news/2020/05/some-made-on-maui-ventilators-are-ready-for-maui-memorial/"
+    target="_blank">
+    The Maui News (5/7/2020)
+  </a>
+  <br />
+  <a
+    href="https://www.hawaiipublicradio.org/post/local-business-adapting-changes-covid-19"
+    target="_blank">
+    Hawaii Public Radio (4/10/2020)
+  </a>
+</p>
+
 <div class="arc-subhead">Financial Plan</div>
 
 <img src="/img/cases/hnu-5.jpg" alt="" class="img-r" />
@@ -83,19 +128,19 @@
   raising outside equity capital. Leveraging the technical expertise and proven
   record of success of its founders, HNu was able to win key contracts at
   inception. By performing on those contracts and exercising careful financial
-  management, HNu built its capital base the old fashioned way – by earning it.
+  management, HNu built its capital base the old-fashioned way – by earning it.
 </p>
 
 <img src="/img/cases/hnu-6.jpg" alt="" class="img-l" />
 <p>
-  HNu's technologies address the needs of customers across scientific, military
+  HNu's technologies address the needs of customers across scientific, military,
   and commercial sectors, so HNu operates under a diversified portfolio of
   contracts yielding predictable future revenue. American Research Capital (ARC)
-  is able to look to this flow of income along with HNu’s record of success to
-  finance the capital investment required for projects and opportunities that
-  are not immediately self-funding. ARC gives HNu the flexibility to accelerate
-  the pace of development, take on larger orders, and grow its business more
-  quickly without the dilution and distraction of outside investors. ARC allows
-  HNu’s founders to keep their focus on their customers, their markets, and
-  their technologies, not their &quot;exit strategy.&quot;
+  can look to this flow of income along with HNu's record of success to finance
+  the capital investment required for projects and opportunities that are not
+  immediately self-funding. ARC gives HNu the flexibility to accelerate the pace
+  of development, take on larger orders, and grow its business more quickly
+  without the dilution and distraction of outside investors. ARC allows HNu’s
+  founders to keep their focus on their customers, their markets, and their
+  technologies, not their &quot;exit strategy.&quot;
 </p>
