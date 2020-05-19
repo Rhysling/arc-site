@@ -129,10 +129,10 @@
             implemented by US carriers.
           </p>
           <p>
-            Mr. Witter currently serves as a trustee of the Dean Witter
-            Foundation and in Corporate Development for USI, a nationwide
-            insurance brokerage as Senior Director for New Business
-            Acquisitions. He is also on the Board of Swag'r.
+            Mr. Witter currently serves as President of the Dean Witter
+            Foundation and as Senior Director for New Business Acquisitions in
+            the Corporate Development group for USI, a nationwide insurance
+            brokerage.
           </p>
 
         </div>
