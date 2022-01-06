@@ -1,21 +1,34 @@
 import svelte from "rollup-plugin-svelte";
-import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
 import livereload from "rollup-plugin-livereload";
-import sass from "rollup-plugin-sass";
 import { terser } from "rollup-plugin-terser";
+import css from "rollup-plugin-css-only";
 import sveltePreprocess from "svelte-preprocess";
 
 const production = !process.env.ROLLUP_WATCH;
+console.log({production});
 
-const preprocess = sveltePreprocess({
-	scss: {
-		includePaths: ["src"]
-	},
-	postcss: {
-		plugins: [require("autoprefixer")]
+function serve() {
+	let server;
+
+	function toExit() {
+		if (server) server.kill(0);
 	}
-});
+
+	return {
+		writeBundle() {
+			if (server) return;
+			server = require('child_process').spawn('npm', ['run', 'start', '--', '--dev', '--port', '5050'], {
+				stdio: ['ignore', 'inherit', 'inherit'],
+				shell: true
+			});
+
+			process.on('SIGTERM', toExit);
+			process.on('exit', toExit);
+		}
+	};
+}
 
 export default {
 	input: "src/main.js",
@@ -28,17 +41,15 @@ export default {
 
 	plugins: [
 		svelte({
-			// enable run-time checks when not in production
-			dev: !production,
-			// we'll extract any component CSS out into
-			// a separate file - better for performance
-			css: (css) => {
-				css.write("public/build/bundle.css");
-			},
-			preprocess: preprocess
+			preprocess: sveltePreprocess(),
+			compilerOptions: {
+				// enable run-time checks when not in production
+				dev: !production
+			}
 		}),
-
-		sass({}),
+		// we'll extract any component CSS out into
+		// a separate file - better for performance
+		css({ output: 'bundle.css' }),
 
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In
@@ -69,19 +80,3 @@ export default {
 	}
 };
 
-function serve() {
-	let started = false;
-
-	return {
-		writeBundle() {
-			if (!started) {
-				started = true;
-
-				require("child_process").spawn("npm", ["run", "start", "--", "--dev"], {
-					stdio: ["ignore", "inherit", "inherit"],
-					shell: true
-				});
-			}
-		}
-	};
-}

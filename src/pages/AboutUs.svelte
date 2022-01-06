@@ -112,7 +112,7 @@
             third biggest Washington State venture investment banking firm in
             just six years. There he was responsible for sourcing all deals,
             raising over $50 million in equity capital for clients, and managing
-            investor relationships – during extremely challenging financial
+            investor relationships - during extremely challenging financial
             markets.
           </p>
           <p>
@@ -122,17 +122,18 @@
           <p>
             Mr. Witter was a partner of Compass Capital, a venture capital firm
             which created superior returns from a diversified group of partner
-            funds via equity and secured debt investments in their “A-List”
+            funds via equity and secured debt investments in their &quot;A-List&quot;
             portfolio companies in a systematic and disciplined fashion. He also
             helped found and served as initial CFO of XYPOINT, the wireless
-            telecom company responsible for “E-911” being fully and properly
+            telecom company responsible for &quot;E-911&quot; being fully and properly
             implemented by US carriers.
           </p>
           <p>
-            Mr. Witter currently serves as President of the Dean Witter
-            Foundation and as Senior Director for New Business Acquisitions in
-            the Corporate Development group for USI, a nationwide insurance
-            brokerage.
+            Mr. Witter consults to Japanese Top 50 corporations on technology,
+            partnerships, and sponsored research in the Pacific Northwest via
+            Max Monitor &amp; Publications and Daily Planet LLC.  He also serves
+            as past President and a current Director of the Dean Witter Foundation
+            and is on the Board of Navidea Biopharmaceuticals (NAVB).
           </p>
 
         </div>
