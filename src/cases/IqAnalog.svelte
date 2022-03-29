@@ -1,39 +1,3 @@
-<style type="text/scss">
-  // .arc-subhead {
-  //   margin: 1rem 0 0.5rem;
-  // }
-
-  p {
-    margin: 0 0 1rem;
-  }
-
-  .img-l {
-    display: block;
-    float: left;
-    margin: 0 0.5rem 0.5rem 0;
-
-    @media screen and (max-width: 520px) {
-      float: none;
-      margin: 0 auto 0.5rem;
-    }
-  }
-
-  // .img-r {
-  //   display: block;
-  //   float: right;
-  //   margin: 0 0 0.5rem 0.5rem;
-
-  //   @media screen and (max-width: 520px) {
-  //     float: none;
-  //     margin: 0 auto 0.5rem;
-  //   }
-  // }
-
-  .img-c {
-    display: block;
-    margin: 0 auto 1rem;
-  }
-</style>
 
 <p>
   IQ-Analog Corporation is a leading developer of wideband transceiver products
@@ -81,5 +45,54 @@
   this area savings converts directly to an overall 93% cost savings.
 </p>
 
-<img src="/img/cases/iqa-3.jpg" alt="" class="img-l" />
-<img src="/img/cases/iqa-4.jpg" alt="" class="img-l" />
+<div class="clearfix">
+  <img src="/img/cases/iqa-3.jpg" alt="" class="img-l pair" />
+  <img src="/img/cases/iqa-4.jpg" alt="" class="img-l pair" />
+</div>
+
+<style type="text/scss">
+  // .arc-subhead {
+  //   margin: 1rem 0 0.5rem;
+  // }
+
+  p {
+    margin: 0 0 1rem;
+  }
+
+  .img-l {
+    display: block;
+    float: left;
+    margin: 0 0.5rem 0.5rem 0;
+
+    &.pair {
+      max-width: calc(49% - 1rem);
+    }
+
+    @media screen and (max-width: 520px) {
+      float: none;
+      margin: 0 auto 0.5rem;
+    }
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  // .img-r {
+  //   display: block;
+  //   float: right;
+  //   margin: 0 0 0.5rem 0.5rem;
+
+  //   @media screen and (max-width: 520px) {
+  //     float: none;
+  //     margin: 0 auto 0.5rem;
+  //   }
+  // }
+
+  .img-c {
+    display: block;
+    margin: 0 auto 1rem;
+  }
+</style>
