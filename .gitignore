@@ -2,4 +2,8 @@
 /public/build/
 /public-busted/
 
+tools/
+secrets/
+ts-validation.txt
+
 .DS_Store
